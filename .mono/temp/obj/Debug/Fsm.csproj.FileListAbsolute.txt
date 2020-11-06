@@ -1,0 +1,6 @@
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\obj\Debug\Fsm.csprojAssemblyReference.cache
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\obj\Debug\Fsm.csproj.CoreCompileInputs.cache
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\bin\Debug\Fsm.dll
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\bin\Debug\Fsm.pdb
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\obj\Debug\Fsm.dll
+C:\Users\dmitry\GodotGames\FSM\.mono\temp\obj\Debug\Fsm.pdb

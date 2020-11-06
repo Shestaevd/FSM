@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nY1hFHJJXn7VMly26hxLFuZq9V3UV7ue5bEMjqqO5lJ0v1E2iSdpu+KFXKRce/wsgNTuu9MWuD3mpeRGtiUMBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dmitry\\GodotGames\\FSM\\Fsm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dmitry\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\dmitry\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.0\\microsoft.netframework.referenceassemblies.net461.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
