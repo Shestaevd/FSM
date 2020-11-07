@@ -14,18 +14,23 @@ public class Hero : KinematicBody2D
 		machine = new StateMachine<Hero>(this);
 		StateManager<Hero> manager = machine.GetManager();
 		manager.StateNewInstanse("idle", 0)
+			.SetOnStateEnter(hero => Console.WriteLine("enter idle"))
 			.SetStateLogic(hero => 
 			{
+				Console.WriteLine("test");
 				velocity.y = Math.Min(maxFallSpeed, velocity.y += grav);
 				hero.MoveAndSlide(velocity, Vector2.Up);
-			});
+			})
+			.SetOnStateExit(hero => Console.WriteLine("exit idle"));
 		manager.StateNewInstanse("fall", 1)
+			.SetOnStateEnter(hero => Console.WriteLine("enter fall"))
 			.SetStateLogic(hero =>
 			{
 				velocity.y = Math.Min(maxFallSpeed, velocity.y += grav);
 				hero.MoveAndSlide(velocity, Vector2.Up);
 			})
-			.SetEnterCondition(hero => velocity.y >= 0);
+			.SetOnStateExit(hero => Console.WriteLine("exit fall"))
+			.SetEnterCondition(hero => velocity.y >= 0 && IsOnFloor());
 		//manager.StateNewInstanse("run", 2);
 		//manager.StateNewInstanse("jump", 3);
 	}

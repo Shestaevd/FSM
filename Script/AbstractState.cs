@@ -11,8 +11,15 @@ namespace Fsm.Script
         public HashSet<AbstractState<T>> BlackSet = new HashSet<AbstractState<T>>();
         public HashSet<AbstractState<T>> WhiteSet = new HashSet<AbstractState<T>>();
 
-        public ulong priority;
-
+        private ulong _priority = 0;
+        public ulong priority 
+        { 
+            get => _priority;
+            set 
+            {
+                _priority = value + 1; 
+            }
+        }
         public string Name;
         abstract public void OnEnter(T entity);
         abstract public void InState(T entity);

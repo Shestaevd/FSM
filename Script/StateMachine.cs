@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fsm.Script
 {
-    class StateMachine<T>
+    public class StateMachine<T>
     {
         private AbstractState<T> currentState = State<T>.GetEmpty();
         private StateManager<T> Manager;
